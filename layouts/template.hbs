@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="{{root_dir}}/css/ewest.css"/>
+        {{> init}}
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="{{root_dir}}/js/ewest.js"></script>
+    </head>
+    <body>
+        <div id="header" class="header">
+            <div id="my-pictures" class="my-pictures">
+                <img class="my-image" id="my-image" onmouseover="imageHover();" onmouseout="imageOut();" src="{{root_dir}}/images/SouthParkPatrick.jpg"/>
+            </div>
+            <div id="main-header" class="main-header">
+                <div id="title-header" class="title-header">
+                    <span class="title-color">M</span>r<span class="title-color">P</span>atrick<span class="title-color">W</span>est
+                </div>
+                <div id="nav-header" class="nav-header">
+                    <div class="menu-box"><div id="me-nav" class="menu-inner-box selected"><a class="menu-item" onclick="goToMe();">me</a></div></div>
+                    <div class="menu-box"><div id="code-nav" class="menu-inner-box notselected"><a class="menu-item" onclick="goToCode();">code</a></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            {{{contents}}}
+        </div>
+
+        {{> footer}}
+
+    </body>
+</html>
+

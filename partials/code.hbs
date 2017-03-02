@@ -1,0 +1,340 @@
+Data Structures
+<ul class="code-list">
+    <li><a id="linked-list" class="code-item" onclick="codeItemClicked(this);">+</a>Linked List
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at contiguous location; the elements are linked using pointers.</p>
+            <p><img src="http://quiz.geeksforgeeks.org/wp-content/uploads/2013/03/Linkedlist.png" alt="Linked List"/></p>
+            <h3>Advantages</h3>
+            <ul>
+                <li>Dynamic size</li>
+                <li>Ease of insertion/deletion</li>
+            </ul>
+            <h3>Disadvantages</h3>
+            <ul>
+                <li>Random access is not allowed. We have to access elements sequentially starting from the first node. So we cannot do binary search with linked lists.</li>
+                <li>Extra memory space for a pointer is required with each element of the list.</li>
+            </ul>
+            <h3>More Information</h3>
+            <p><a href="http://www.geeksforgeeks.org/data-structures/linked-list/">Geeks for Geeks</a></p>
+        </div>
+    </li>
+    <li><a id="stack" class="code-item" onclick="codeItemClicked(this);">+</a>Stack
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).</p>
+            <p>Mainly the following three basic operations are performed in the stack:</p>
+            <p><img src="http://quiz.geeksforgeeks.org/wp-content/uploads/2013/03/stack.png" alt="Stack"/></p>
+            <ul>
+                <li><span style="font-weight:bold;">Push</span>: Adds an item in the stack. If the stack is full, then it is said to be an Overflow condition.</li>
+                <li><span style="font-weight:bold;">Pop</span>: Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.</li>
+                <li><span style="font-weight:bold;">Peek or Top</span>: Returns top element of stack.</li>
+                <li><span style="font-weight:bold;">isEmpty</span>: Returns true if stack is empty, else fals.</li>
+            </ul>
+            <h3>Time Complexities</h3>
+            <p>Time Complexities of operations on stack:</p>
+            <p>p>push(), pop(), esEmpty() and peek() all take O(1) time. We do not run any loop in any of these operations.</p>
+            <h3>More Informaiton</h3>
+            <p><a href="http://www.geeksforgeeks.org/stack/">Geeks for Geeks</a></p>
+        </div></li>
+    <li><a id="queue" class="code-item" onclick="codeItemClicked(this);">+</a>Queue
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>Like Stack, Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO).  A good example of queue is any queue of consumers for a resource where the consumer that came first is served first.</p>
+            <p>The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.</p>
+            <p>Mainly the following four basic operations are performed on queue:</p>
+            <ul>
+            <li><span style="font-weight:bold;">Enqueue</span>: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition.</li>
+            <li><span style="font-weight:bold;">Dequeue</span>: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition.</li>
+            <li><span style="font-weight:bold;">Front</span>: Get the front item from queue.</li>
+            <li><span style="font-weight:bold;">Rear</span>: Get the last item from queue.</li>
+            </ul>
+            <p><img src="http://quiz.geeksforgeeks.org/wp-content/uploads/2014/02/Queue.png" alt="queue"/></p>
+            <h3>More Info</h3>
+            <p><a href="http://www.geeksforgeeks.org/queue/">Geeks for Geeks</a></p>
+        </div></li>
+    <li><a id="binary-tree" class="code-item" onclick="codeItemClicked(this);">+</a>Binary Tree
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are hierarchical data structures. A Binary Tree is a tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.</p>
+            <h3>Vocabulary</h3>
+            <p>The topmost node is called root of the tree. The elements that are directly under an element are called its children. The element directly above something is called its parent. For example, a is a child of f and f is the parent of a. Finally, elements with no children are called leaves.</p>
+            <h3>Why Trees</h3>
+            <ul>
+                <li>One reason to use trees might be because you want to store information that naturally forms a hierarchy. For example, the file system on a computer</li>
+                <li>Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).</li>
+                <li>Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).</li>
+                <li>Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on number of nodes as nodes are linked using pointers.</li>
+            </ul>
+            <h3>Types</h3>
+            <ul>
+                <li>Full: A Binary Tree is full if every node has 0 or 2 children</li>
+                <li>Complete Binary Tree: A Binary Tree is complete Binary Tree if all levels are completely filled except possibly the last level and the last level has all keys as left as possible</li>
+                <li>Perfect Binary Tree A Binary tree is Perfect Binary Tree in which all internal nodes have two children and all leaves are at same level.</li>
+                <li>A binary tree is balanced if height of the tree is O(Log n) where n is number of nodes. For Example, AVL tree maintain O(Log n) height by making sure that the difference between heights of left and right subtrees is 1. Red-Black trees maintain O(Log n) height by making sure that the number of Black nodes on every root to leaf paths are same and there are no adjacent red nodes. Balanced Binary Search trees are performance wise good as they provide O(log n) time for search, insert and delete.</li>
+                <li>A degenerate (or pathological) tree A Tree where every internal node has one child. Such trees are performance-wise same as linked list.</li>
+            </ul>
+            <p><img src="http://geeksforgeeks.org/wp-content/uploads/2009/06/tree12.gif"/></p>
+            <h3>Depth First Traversal</h3>
+            <ul>
+                <li>Inorder (Left, Root, Right) : 4 2 5 1 3</li>
+                <li>Preorder (Root, Left, Right) : 1 2 4 5 3</li>
+                <li>Postorder (Left, Right, Root) : 4 5 2 3 1</li>
+            </ul>
+            <h3>Breadth First Traversal</h3>
+            <ul>
+                <li>Breadth First or Level Order Traversal : 1 2 3 4 5</li>
+            </ul>
+            <h3>More Info</h3>
+            <p><a href="http://www.geeksforgeeks.org/binary-tree-2/">Geeks for Geeks</a></p>
+        </div></li>
+    <li><a id="binary-search-tree" class="code-item" onclick="codeItemClicked(this);">+</a>Binary Search Tree
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>Binary Search Tree, is a node-based binary tree data structure which has the following properties:</p>
+            <ul>
+                <li>The left subtree of a node contains only nodes with keys less than the node’s key.</li>
+                <li>The right subtree of a node contains only nodes with keys greater than the node’s key.</li>
+                <li>The left and right subtree each must also be a binary search tree.</li>
+                <li>There must be no duplicate nodes.</li>
+            </ul>
+            <p><img src="http://quiz.geeksforgeeks.org/wp-content/uploads/2014/01/200px-Binary_search_tree.svg_.png"/>></p>
+            <h3>Time Complexity</h3>
+            <p>The worst case time complexity of search and insert operations is O(h) where h is height of Binary Search Tree. In worst case, we may have to travel from root to the deepest leaf node. The height of a skewed tree may become n and the time complexity of search and insert operation may become O(n).</p>
+            <h3>More Info</h3>
+            <p><a href="http://www.geeksforgeeks.org/binary-search-tree/">Geeks for Geeks</a></p>
+        </div></li>
+    <li><a id="binary-heap" class="code-item" onclick="codeItemClicked(this);">+</a>Binary Heap
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>A Binary Heap is a Binary Tree with following properties.</p>
+            <ul>
+                <li>It’s a complete tree (All levels are completely filled except possibly the last level and the last level has all keys as left as possible). This property of Binary Heap makes them suitable to be stored in an array.</li>
+                <li>A Binary Heap is either Min Heap or Max Heap. In a Min Binary Heap, the key at root must be minimum among all keys present in Binary Heap. The same property must be recursively true for all nodes in Binary Tree. Max Binary Heap is similar to Min Heap.</li>
+            </ul>
+            <h3>Operations and Time Complexity</h3>
+            <ul>
+                <li>getMini(): It returns the root element of Min Heap. Time Complexity of this operation is O(1).</li>
+                <li>extractMin(): Removes the minimum element from Min Heap. Time Complexity of this Operation is O(Logn) as this operation needs to maintain the heap property (by calling heapify()) after removing root.</li>
+                <li>decreaseKey(): Decreases value of key. Time complexity of this operation is O(Logn). If the decreases key value of a node is greater than parent of the node, then we don’t need to do anything. Otherwise, we need to traverse up to fix the violated heap property.</li>
+                <li>insert(): Inserting a new key takes O(Logn) time. We add a new key at the end of the tree. IF new key is greater than its parent, then we don’t need to do anything. Otherwise, we need to traverse up to fix the violated heap property.</li>
+                <li>delete(): Deleting a key also takes O(Logn) time. We replace the key to be deleted with minum infinite by calling decreaseKey(). After decreaseKey(), the minus infinite value must reach root, so we call extractMin() to remove key.</li>
+            </ul>
+            <h3>More Info</h3>
+            <p><a href="http://www.geeksforgeeks.org/heap/">Geeks for Geeks</a></p>
+        </div></li>
+    <li><a id="hashing" class="code-item" onclick="codeItemClicked(this);">+</a>Hashing
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>Hashing is an improvement over Direct Access Table. The idea is to use hash function that converts a given phone number or any other key to a smaller number and uses the small number as index in a table called hash table. A direct access table is where we make a big array and use numbers as index in the array.
+            The problem with direct access tables is that the numbers can be quite large, and we can't use anything other than a number. The solution is to use hashing.</p>
+            <h3>Hash Function</h3>
+            <p>Hash Function: A function that converts a given big phone number to a small practical integer value. The mapped integer value is used as an index in hash table. In simple terms, a hash function maps a big number or string to a small integer that can be used as index in hash table.
+                A good hash function should have following properties 1) Efficiently computable. 2) Should uniformly distribute the keys (Each table position equally likely for each key)</p>
+            <h3>Hash Table</h3>
+            <p>An array that stores pointers to records corresponding to a given hashed key. An entry in hash table is NIL if no existing key has hash function value equal to the index for the entry.</p>
+            <h3>Collisions</h3>
+            <p>One potential problem is that thre are multiple entries for a hash key value. One method to solve this is to make the entry in the array an array itself and iterate through that array to find the element.</p>
+            <h3>More Info</h3>
+            <p><a href="http://www.geeksforgeeks.org/hashing/">Geeks for Geeks</a></p>
+        </div></li>
+    <li><a id="graph" class="code-item" onclick="codeItemClicked(this);">+</a>Graph
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>Graph is a data structure that consists of following two components:</p>
+            <ul>
+                <li>A finite set of vertices also called as nodes.</li>
+                <li>A finite set of ordered pair of the form (u, v) called as edge. The pair is ordered because (u, v) is not same as (v, u) in case of directed graph(di-graph). The pair of form (u, v) indicates that there is an edge from vertex u to vertex v. The edges may contain weight/value/cost.</li>
+            </ul>
+            <h3>Example Uses</h3>
+            <p>Graphs are used to represent many real life applications: Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks like linkedIn, facebook. For example, in facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender and locale. See this for more applications of graph.</p>
+            <h3>Example Graph</h3>
+            <p><img src="http://d1hyf4ir1gqw6c.cloudfront.net//wp-content/uploads/graph_representation12.png"/></p>
+            <h3>Adjancency Matrix</h3>
+            <p>Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph. Let the 2D array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j. Adjacency matrix for undirected graph is always symmetric. Adjacency Matrix is also used to represent weighted graphs. If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.</p>
+            <p>The adjacency matrix for the above example graph is:</p>
+            <p><img src="http://d1hyf4ir1gqw6c.cloudfront.net//wp-content/uploads/adjacency_matrix_representation.png"/></p>
+            <p>Pros: Representation is easier to implement and follow. Removing an edge takes O(1) time. Queries like whether there is an edge from vertex ‘u’ to vertex ‘v’ are efficient and can be done O(1).</p>
+            <p>Cons: Consumes more space O(V^2). Even if the graph is sparse(contains less number of edges), it consumes the same space. Adding a vertex is O(V^2) time.</p>
+            <h3>Adjancency List</h3>
+            <p>An array of linked lists is used. Size of the array is equal to number of vertices. Let the array be array[]. An entry array[i] represents the linked list of vertices adjacent to the ith vertex. This representation can also be used to represent a weighted graph. The weights of edges can be stored in nodes of linked lists. Following is adjacency list representation of the above graph.</p>
+            <p><img src="http://d1hyf4ir1gqw6c.cloudfront.net//wp-content/uploads/adjacency_list_representation.png"/></p>
+            <h3>More Info</h3>
+            <p><a href="http://www.geeksforgeeks.org/data-structures/#AdvancedDataStructure">Geeks for Geeks</a></p>
+        </div></li>
+    <li><a id="advanced" class="code-item" onclick="codeItemClicked(this);">+</a>Advanced Data Structure
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="array" class="code-item" onclick="codeItemClicked(this);">+</a>Array
+        <div class="in-detail">
+            <h3>Drawbacks</h3>
+            <ul>Arrays can be used to store linear data of similar types, but arrays have following limitations.
+                <li>The size of the arrays is fixed: So we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage.</li>
+                <li>Inserting a new element in an array of elements is expensive, because room has to be created for the new elements and to create room existing elements have to shifted.</li>
+                For example, in a system if we maintain a sorted list of IDs in an array id[].
+                <br/>
+                id[] = [1000, 1010, 1050, 2000, 2040].
+                <br/>
+                And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000).
+                <li>Deletion is also expensive with arrays until unless some special techniques are used. For example, to delete 1010 in id[], everything after 1010 has to be moved.</li>
+                </ul>
+        </div></li>
+    <li><a id="matrix" class="code-item" onclick="codeItemClicked(this);">+</a>Matrix
+        <div class="in-detail">
+
+        </div></li>
+</ul>
+Search Algorithms
+<ul class="code-list">
+    <li><a id="bfs" class="code-item" onclick="codeItemClicked(this);">+</a>Breadth First Search (BFS)
+        <div class="in-detail">
+            <p>Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]) and explores the neighbor nodes first, before moving to the next level neighbors.</p>
+            <p>BFS was invented in the late 1950s by E. F. Moore, who used it to find the shortest path out of a maze,[2] and discovered independently by C. Y. Lee as a wire routing algorithm (published 1961)</p>
+            <p><a href="https://en.wikipedia.org/wiki/Breadth-first_search">Wikipedia</a></p>
+        </div></li>
+    <li><a id="dfs" class="code-item" onclick="codeItemClicked(this);">+</a>Depth First Search (DFS)
+        <div class="in-detail">
+            <p>Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. One starts at the root (selecting some arbitrary node as the root in the case of a graph) and explores as far as possible along each branch before backtracking.</p>
+            <p>A version of depth-first search was investigated in the 19th century by French mathematician Charles Pierre Trémaux[1] as a strategy for solving mazes.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Depth-first_search">Wikipedia</a></p>
+        </div></li>
+    <li><a id="linear" class="code-item" onclick="codeItemClicked(this);">+</a>Linear Search
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="binary" class="code-item" onclick="codeItemClicked(this);">+</a>Binary Search
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="jump" class="code-item" onclick="codeItemClicked(this);">+</a>Jump Search
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="interpolation" class="code-item" onclick="codeItemClicked(this);">+</a>Interpolation Search
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="exponential" class="code-item" onclick="codeItemClicked(this);">+</a>Exponential Search
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="ternary" class="code-item" onclick="codeItemClicked(this);">+</a>Ternary Search
+        <div class="in-detail">
+
+        </div></li>
+</ul>
+Sorting Algorithms
+<ul class="code-list">
+    <li><a id="selection-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Selection Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="bubble-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Bubble Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="insertion-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Insertion Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="merge-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Merge Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="heap-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Heap Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="quick-sort" class="code-item" onclick="codeItemClicked(this);">+</a>QuickSort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="radix-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Radix Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="counting-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Counting Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="bucket-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Bucket Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="sheel-sort" class="code-item" onclick="codeItemClicked(this);">+</a>ShellSort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="comb-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Comb Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="pigeonhole-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Pigeonhole Sort
+        <div class="in-detail">
+
+        </div></li>
+    <li><a id="cycle-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Cycle Sort
+        <div class="in-detail">
+
+        </div></li>
+</ul>
+Big-O
+<ul class="code-list">
+    <li><a id="time-complexity" class="code-item" onclick="codeItemClicked(this);">+</a>Time complexity
+        <div class="in-detail">
+            <p>the time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input.[1]:226 The time complexity of an algorithm is commonly expressed using big O notation, which excludes coefficients and lower order terms. When expressed this way, the time complexity is said to be described asymptotically, i.e., as the input size goes to infinity.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Time_complexity">Wikipedia</a></p>
+        </div></li>
+    <li><a id="aymptotic" class="code-item" onclick="codeItemClicked(this);">+</a>Asymptotic
+        <div class="in-detail">
+            <p>Asymptotic Analysis - In computer science in the analysis of algorithms, considering the performance of algorithms when applied to very large input datasets</p>
+        </div></li>
+    <li><a id="big-o" class="code-item" onclick="codeItemClicked(this);">+</a>Big-O
+        <div class="in-detail">
+            <p>Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity.</p>
+            <p>Big O is the worst case scenario - the worst time and space that an algorithm can take</p>
+            <p>Big O notation is used to classify algorithms according to how their running time or space requirements grow as the input size grows.</p>
+            <p>Big &Omega; (omega) - lower bound - best case</p>
+            <p>Big &theta; (theta) - is the running time</p>
+            <p>&Omega;(f(n)) &lt;= &theta;(f(n)) &lt;= O(f(n))</p>
+        </div></li>
+    <li><a id="np" class="code-item" onclick="codeItemClicked(this);">+</a>NP
+        <div class="in-detail">
+            <p>non-deterministic polynomial-time hard</p>
+            <p><span style="font-weight:bold;">NP</span>: the set of all decision problems for which the instances where the answer is "yes" have efficiently verifiable proofs. More precisely, these proofs have to be verifiable by deterministic computations that can be performed in polynomial time</p>
+            <p><span style="font-weight:bold;">deterministic</span>: a deterministic algorithm is an algorithm which, given a particular input, will always produce the same output, with the underlying machine always passing through the same sequence of states</p>
+            <p><span style="font-weight:bold;">polynomial time</span>: An algorithm is said to be of polynomial time if its running time is upper bounded by a polynomial expression in the size of the input for the algorithm, i.e., T(n) = O(n<span style="vertical-align: super;">k</span>) for some constant k. <a href="https://en.wikipedia.org/wiki/Time_complexity#Polynomial_time">Wikipedia</a></a>
+            </p>
+        </div></li>
+    <li><a id="np-hardness" class="code-item" onclick="codeItemClicked(this);">+</a>NP-hardness
+        <div class="in-detail">
+
+        </div></li>
+</ul>
+Programming
+<ul class="code-list">
+    <li><a id="dynamic-programming" class="code-item" onclick="codeItemClicked(this);">+</a>Dynamic Programming
+        <div class="in-detail">
+            <p>Dynamic Programming refers to a very large class of algorithms. The idea is to break a large problem down (if possible) into incremental steps so that, at any given stage, optimal solutions are known to sub-problems.</p>
+        </div></li>
+    <li><a id="functional-programming" class="code-item" onclick="codeItemClicked(this);">+</a>Functional Programming
+        <div class="in-detail">
+            <p>a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.</p>
+            <ul>
+                <li>Common Lisp</li>
+                <li>Scheme</li>
+                <li>F#</li>
+                <li>Haskell</li>
+                <li>Clojure</li>
+                <li>Elm</li>
+            </ul>
+        </div></li>
+</ul>
+Good Sites
+<ul>
+    <li><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms">Fundamentals of Algorithms</a></li>
+    <li><a href="http://www.geeksforgeeks.org/data-structures/">Data Structures</a></li>
+    <li><a href="http://bigocheatsheet.com/">Big-O Notation</a></li>
+</ul>
+
