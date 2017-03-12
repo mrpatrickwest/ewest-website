@@ -201,54 +201,129 @@ Search Algorithms
         </div></li>
     <li><a id="linear" class="code-item" onclick="codeItemClicked(this);">+</a>Linear Search
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>Simply iterate through the items of the array to find the element</p>
+            <h3>Time Complexity</h3>
+            <p>O(n)</p>
         </div></li>
     <li><a id="binary" class="code-item" onclick="codeItemClicked(this);">+</a>Binary Search
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>A Divide and Conquer algorithm - search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.</p>
+            <h3>Time Complexity</h3>
+            <p>T(n) = T(n/2) + c</p>
         </div></li>
     <li><a id="jump" class="code-item" onclick="codeItemClicked(this);">+</a>Jump Search
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>suppose we have an array arr[] of size n and block (to be jumped) size m. Then we search at the indexes arr[0], arr[m], arr[2m]…..arr[km] and so on. Once we find the interval (arr[km] &lt; x &lt; arr[(k+1)m]), we perform a linear search operation from the index km to find the element x.</p>
+            <h3>Time Complexity</h3>
+            <p>O(√n)</p>
         </div></li>
     <li><a id="interpolation" class="code-item" onclick="codeItemClicked(this);">+</a>Interpolation Search
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>Binary Search always goes to middle element to check. On the other hand interpolation search may go to different locations according the value of key being searched. For example if the value of key is closer to the last element, interpolation search is likely to start search toward the end side.</p>
+            <h3>Time Complexity</h3>
+            <p>If elements are uniformly distributed, then O (log log n)). In worst case it can take upto O(n).</p>
         </div></li>
     <li><a id="exponential" class="code-item" onclick="codeItemClicked(this);">+</a>Exponential Search
         <div class="in-detail">
-
-        </div></li>
-    <li><a id="ternary" class="code-item" onclick="codeItemClicked(this);">+</a>Ternary Search
-        <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>Exponential search involves two steps:</p>
+            <ol>
+                <li>Find range where element is present</li>
+                <li>Do Binary Search in above found range.</li>
+            </ol>
+            <p>How to find the range where element may be present?</p>
+            <p>The idea is to start with subarray size 1 compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater.</p>
+            <p>Once we find an index i (after repeated doubling of i), we know that the element must be present between i/2 and i </p></p>
+            <h3>Time Complexity</h3>
+            <p>O(Log n)</p>
         </div></li>
 </ul>
 Sorting Algorithms
 <ul class="code-list">
     <li><a id="selection-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Selection Sort
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.</p>
+            <ol>
+                <li>The subarray which is already sorted.</li>
+                <li>Remaining subarray which is unsorted.</li>
+            </ol>
+            <p>In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.</p>
+            <h3>Time Complexity</h3>
+            <p>O(n<span style="vertical-align: super;">2</span>)</p>
         </div></li>
     <li><a id="bubble-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Bubble Sort
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.</p>
+            <p>Example:</p>
+            <p>First Pass:</p>
+            <p>( 5 1 4 2 8 ) –&gt; ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.</p>
+            <p>( 1 5 4 2 8 ) –&gt;  ( 1 4 5 2 8 ), Swap since 5 > 4</p>
+            <p>( 1 4 5 2 8 ) –&gt;  ( 1 4 2 5 8 ), Swap since 5 > 2</p>
+            <p>( 1 4 2 5 8 ) –&gt; ( 1 4 2 5 8 ), Now, since these elements are already in order (8 > 5), algorithm does not swap them.</p>
+            <p>Second Pass:</p>
+            <p>( 1 4 2 5 8 ) –&gt; ( 1 4 2 5 8 )</p>
+            <p>( 1 4 2 5 8 ) –&gt; ( 1 2 4 5 8 ), Swap since 4 > 2</p>
+            <p>( 1 2 4 5 8 ) –&gt; ( 1 2 4 5 8 )</p>
+            <p>( 1 2 4 5 8 ) –&gt;  ( 1 2 4 5 8 )</p>
+            <p>Now, the array is already sorted, but our algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.</p>
+            <p>Third Pass:</p>
+            <p>( 1 2 4 5 8 ) –&gt; ( 1 2 4 5 8 )</p>
+            <p>( 1 2 4 5 8 ) –&gt; ( 1 2 4 5 8 )</p>
+            <p>( 1 2 4 5 8 ) –&gt; ( 1 2 4 5 8 )</p>
+            <p>( 1 2 4 5 8 ) –&gt; ( 1 2 4 5 8 )</p>
+            <h3>Time Complexity</h3>
+            <p>O(n<span style="vertical-align: super;">2</span>)</p>
         </div></li>
     <li><a id="insertion-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Insertion Sort
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>Finding the next element that is that is less than the element before it iterate backwards moving the elements one ahead until the element is in the right position</p>
+            <p><img src="http://quiz.geeksforgeeks.org/wp-content/uploads/2013/03/insertion-sort.png"/></p>
+            <h3>Time Complexity</h3>
+            <p>O(n<span style="vertical-align: super;">2</span>)</p>
         </div></li>
     <li><a id="merge-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Merge Sort
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>A Divide and Conquer algorithm, It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves.</p>
+            <p><img src="http://quiz.geeksforgeeks.org/wp-content/uploads/2013/03/Merge-Sort.png"/></p>
+            <h3>Time Complexity</h3>
+            <p>O(n log n)</p>
         </div></li>
     <li><a id="heap-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Heap Sort
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>Heap sort is a comparison based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the maximum element and place the maximum element at the end. We repeat the same process for remaining element.</p>
+            <p>A sorting algorithm that works by first organizing the data to be sorted into a special type of binary tree called a heap. The heap itself has, by definition, the largest value at the top of the tree, so the heap sort algorithm must also reverse the order. It does this with the following steps:</p>
+            <ol>
+                <li>Remove the topmost item (the largest) and replace it with the rightmost leaf. The topmost item is stored in an array.</li>
+                <li>Re-establish the heap.</li>
+                <li>Repeat steps 1 and 2 until there are no more items left in the heap.</li>
+            </ol>
+            <p>The sorted elements are now stored in an array.</p>
+            <p>A heap sort is especially efficient for data that is already stored in a binary tree. In most cases, however, the quick sort algorithm is more efficient.</p>
+            <h3>Time Complexity</h3>
+            <p>O(Logn)</p>
         </div></li>
     <li><a id="quick-sort" class="code-item" onclick="codeItemClicked(this);">+</a>QuickSort
         <div class="in-detail">
-
+            <h3>Overview</h3>
+            <p>QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.</p>
+            <ol>
+                <li>Always pick first element as pivot.</li>
+                <li>Always pick last element as pivot (implemented below)</li>
+                <li>Pick a random element as pivot.</li>
+                <li>Pick median as pivot.</li>
+            </ol>
+            <p>The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.</p>
+            <h3>Time Complexity</h3>
+            <p>O(n<span style="vertical-align: super;">2</span>)</p>
         </div></li>
     <li><a id="radix-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Radix Sort
         <div class="in-detail">

@@ -1,1 +1,21 @@
-ME
+<div class="me-div">
+    <div class="me-menu">
+        <p><a onclick="showAboutMe();" class="me-menu-item" style="margin-top: 0;padding-top: 0;">About Me</a></p>
+        <p><a onclick="showPublications();" class="me-menu-item">Publications</a></p>
+        <p><a onclick="showPresentations();" class="me-menu-item">Presentations</a></p>
+        <p><a onclick="showResume();" class="me-menu-item">Resume</a></p>
+    </div>
+    <div class="me-display">
+        <div class="me-display-item" id="about-me">
+            <div class="me-description-div">
+                <div class="me-image" id="me-image"></div>
+                <div class="me-description" id="me-description"></div>
+            </div>
+        </div>
+        <div class="me-display-item" id="publications"></div>
+        <div class="me-display-item" id="presentations"></div>
+        <div class="me-display-item" id="resume">
+            {{> resume}}
+        </div>
+    </div>
+</div>

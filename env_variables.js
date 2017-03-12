@@ -16,7 +16,11 @@ module.exports = function(environment) {
 			env["root_dir"] = "/~westp/ewest/build";
 			env["hostname"] = "http://localhost";
 			env["localhost"] = true;
-
+			break;
+		case "prod":
+			env["root_dir"] = "";
+			env["hostname"] = "http://ewest.org";
+			env["localhost"] = false;
 			break;
 	}
 

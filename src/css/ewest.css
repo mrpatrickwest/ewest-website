@@ -128,6 +128,59 @@ a.code-item {
   width: 400px;
 }
 
+.me-div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.me-menu {
+  flex: 1 1 50px;
+}
+
+#about-me,#publications,#presentations,#resume {
+  display: none;
+}
+
+.me-description-div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.me-image {
+  flex: 1 1 50px;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.me-image img {
+  width: 100px;
+}
+
+.me-description {
+  flex: 1 1 100%;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-left: 10px;
+}
+
+.me-display {
+  flex: 1 1 100%;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.me-menu-item {
+  cursor: pointer;
+}
+
+.document-div {
+  margin: 10px 0 10px 0;
+}
+
+.document-div:hover {
+  background-color: lightblue;
+}
+
 @media screen and (max-width: 1060px) {
   .title-header {
     font-size: 43px
