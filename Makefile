@@ -3,8 +3,11 @@
 build: node_modules package.json
 	node --harmony index.js local
 
-prod: node_modules package.json
-	node --harmony index.js prod
+ewest: node_modules package.json
+	node --harmony index.js ewest
+
+orion: node_modules package.json
+	node --harmony index.js orion
 
 install:
 	npm install
