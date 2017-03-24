@@ -1,4 +1,14 @@
-Data Structures
+<ul>
+    <li><a href="#data-structures">Data Structures</a></li>
+    <li><a href="#search-algorithms">Search Algorithms</a></li>
+    <li><a href="#sorting-algorithms">Sorting Algorithms</a></li>
+    <li><a href="#big-o">Big-O</a></li>
+    <li><a href="#programming">Programming</a></li>
+    <li><a href="#design-patterns">Design Patterns</a></li>
+    <li><a href="#misc">Miscellaneous</a></li>
+    <li><a href="#good-sites">Good Sites</a></li>
+</ul>
+<span id="data-structures">Data Structures</span>
 <ul class="code-list">
     <li><a id="linked-list" class="code-item" onclick="codeItemClicked(this);">+</a>Linked List
         <div class="in-detail">
@@ -53,6 +63,12 @@ Data Structures
             <h3>More Info</h3>
             <p><a href="http://www.geeksforgeeks.org/queue/">Geeks for Geeks</a></p>
         </div></li>
+    <li><a id="priority-queue" class="code-item" onclick="codeItemClicked(this);">*</a>Priority Queue
+        <div class="in-detail">
+            <h3>Overview</h3>
+            <p>a priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a "priority" associated with it. In a priority queue, an element with high priority is served before an element with low priority.</p>
+        </div>
+    </li>
     <li><a id="binary-tree" class="code-item" onclick="codeItemClicked(this);">+</a>Binary Tree
         <div class="in-detail">
             <h3>Overview</h3>
@@ -185,7 +201,7 @@ Data Structures
 
         </div></li>
 </ul>
-Search Algorithms
+<span id="search-algorithms">Search Algorithms</span>
 <ul class="code-list">
     <li><a id="bfs" class="code-item" onclick="codeItemClicked(this);">+</a>Breadth First Search (BFS)
         <div class="in-detail">
@@ -242,7 +258,7 @@ Search Algorithms
             <p>O(Log n)</p>
         </div></li>
 </ul>
-Sorting Algorithms
+<span id="sorting-algorithms">Sorting Algorithms</span>
 <ul class="code-list">
     <li><a id="selection-sort" class="code-item" onclick="codeItemClicked(this);">+</a>Selection Sort
         <div class="in-detail">
@@ -354,7 +370,7 @@ Sorting Algorithms
 
         </div></li>
 </ul>
-Big-O
+<span id="big-o">Big-O</span>
 <ul class="code-list">
     <li><a id="time-complexity" class="code-item" onclick="codeItemClicked(this);">+</a>Time complexity
         <div class="in-detail">
@@ -387,7 +403,7 @@ Big-O
 
         </div></li>
 </ul>
-Programming
+<span id="programming">Programming</span>
 <ul class="code-list">
     <li><a id="dynamic-programming" class="code-item" onclick="codeItemClicked(this);">+</a>Dynamic Programming
         <div class="in-detail">
@@ -406,10 +422,90 @@ Programming
             </ul>
         </div></li>
 </ul>
-Good Sites
+<span id="bit-manipulation">Bit Manipulation</span>
+<ul class="code-list">
+    <li><a id="bm-not" class="code-item" onclick="codeItemClicked(this);">+</a>~ (Not)
+        <div class="in-detail">
+            <p>Bitwise NOT is an unary operator that flips the bits of the number i.e., if the ith bit is 0, it will change it to 1 and vice versa. Bitwise NOT is nothing but simply the one’s complement of a number. Lets take an example.</p>
+            <p>N = 5 = (101)<sub>2</sub></p>
+            <p>~N = ~5 = ~(101)<sub>2</sub> = (010)<sub>2</sub> = 2</p>
+        </div>
+    </li>
+    <li><a id="bm-and" class="code-item" onclick="codeItemClicked(this);">+</a>&amp; (And)
+        <div class="in-detail">
+            <p>Bitwise AND is a binary operator that operates on two equal-length bit patterns. If both bits in the compared position of the bit patterns are 1, the bit in the resulting bit pattern is 1, otherwise 0.</p>
+            <p>A = 5 = (101)<sub>2</sub> , B = 3 = (011)<sub>2</sub> A &amp; B = (101)<sub>2</sub> &amp; (011)<sub>2</sub>= (001)<sub>2</sub> = 1</p>
+        </div>
+    </li>
+    <li><a id="bm-or" class="code-item" onclick="codeItemClicked(this);">+</a>| (Or)
+        <div class="in-detail">
+            <p>Bitwise OR is also a binary operator that operates on two equal-length bit patterns, similar to bitwise AND. If both bits in the compared position of the bit patterns are 0, the bit in the resulting bit pattern is 0, otherwise 1.</p>
+            <p>A = 5 = (101)<sub>2</sub> , B = 3 = (011)<sub>2</sub></p>
+            <p>A | B = (101)<sub>2</sub> | (011)2 = (111)<sub>2</sub> = 7</p>
+        </div>
+    </li>
+    <li><a id="bm-xor" class="code-item" onclick="codeItemClicked(this);">+</a>^ (Xor)
+        <div class="in-detail">
+            <p>Bitwise XOR also takes two equal-length bit patterns. If both bits in the compared position of the bit patterns are 0 or 1, the bit in the resulting bit pattern is 0, otherwise 1.</p>
+            <p>A = 5 = (101)<sub>2</sub> , B = 3 = (011)<sub>2</sub></p>
+            <p>A ^ B = (101)<sub>2</sub> ^ (011)2 = (110)<sub>2</sub> = 6</p>
+        </div>
+    </li>
+    <li><a id="bm-left-shift" class="code-item" onclick="codeItemClicked(this);">+</a>&lt;&lt; (Left Shift)
+        <div class="in-detail">
+            <p>Left shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the left and append 0 at the end. Left shift is equivalent to multiplying the bit pattern with 2k ( if we are shifting k bits ).</p>
+            <p>1 << 1 = 2 = 2<sup>1</sup></p>
+            <p>1 << 2 = 4 = 2<sup>2</sup> 1 << 3 = 8 = 2<sup>3</sup></p>
+            <p>1 << 4 = 16 = 2<sup>4</sup> </p>
+        </div>
+    </li>
+    <li><a id="bm-right-shift" class="code-item" onclick="codeItemClicked(this);">+</a>&gt;&gt; (Right Shift)
+        <div class="in-detail">
+            <p>Right shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the right and append 1 at the end. Right shift is equivalent to dividing the bit pattern with 2k ( if we are shifting k bits ).</p>
+            <p>4 >> 1 = 2</p>
+            <p>6 >> 1 = 3</p>
+            <p>5 >> 1 = 2</p>
+            <p>16 >> 4 = 1</p>
+        </div>
+    </li>
+</ul>
+<span id="design-patterns">Design Patterns</span>
+<p><a href="https://en.wikipedia.org/wiki/Software_design_pattern">WikiPedia</a></p>
+<ul class="code-list">
+    <li><a id="singleton" class="code-item" onclick="codeItemClicked(this);">+</a>Singleton
+        <div class="in-detail">
+            <p>Ensure a class has only one instance, and provide a global point of access to it.</p>
+        </div>
+    </li>
+    <li><a id="abstract-factory" class="code-item" onclick="codeItemClicked(this);">+</a>Abstract Factory
+        <div class="in-detail">
+            <p>Provide an interface for creating families of related or dependent objects without specifying their concrete classes.</p>
+        </div>
+    </li>
+    <li><a id="factory" class="code-item" onclick="codeItemClicked(this);">+</a>Factory Method
+        <div class="in-detail">
+            <p>Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses (dependency injection)</p>
+        </div>
+    </li>
+    <li><a id="injection" class="code-item" onclick="codeItemClicked(this);">+</a>Dependency Injection / Inversion of Control
+        <div class="in-detail">
+            <p>A dependency is an object that can be used (a service). An injection is the passing of a dependency to a dependent object (a client) that would use it. ... Dependency injection is one form of the broader technique of inversion of control.</p>
+        </div>
+    </li>
+</ul>
+<span id="misc">Misc</span>
+<ul class="code-list">
+    <li><a id="stack-v-heap" class="code-item" onclick="codeItemClicked(this);">+</a>Stack vs. Heap
+        <div class="in-detail">
+            <p>Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer's RAM . Variables allocated on the stack are stored directly to the memory and access to this memory is very fast, and it's allocation is dealt with when the program is compiled.</p>
+        </div>
+    </li>
+</ul>
+<span id="good-sites">Good Sites</span>
 <ul>
     <li><a href="http://www.geeksforgeeks.org/fundamentals-of-algorithms">Fundamentals of Algorithms</a></li>
     <li><a href="http://www.geeksforgeeks.org/data-structures/">Data Structures</a></li>
     <li><a href="http://bigocheatsheet.com/">Big-O Notation</a></li>
+    <li><a href="https://www.hackerearth.com/practice/notes/bit-manipulation/">Bit Manipulation</a></li>
 </ul>
 

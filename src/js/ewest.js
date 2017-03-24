@@ -14,9 +14,11 @@ function getQueryVariable(variable) {
 function clearAll() {
     $("#me").hide();
     $("#code").hide();
+    $("#glossary").hide();
 
     $("#me-nav").attr("class", "menu-inner-box notselected");
     $("#code-nav").attr("class", "menu-inner-box notselected");
+    $("#glossary-nav").attr("class", "menu-inner-box notselected");
 }
 function goToMe() {
     clearAll();
@@ -31,6 +33,13 @@ function goToCode() {
     $(document).prop('title', 'Patrick West - my code');
     $("#code").show();
     $("#code-nav").attr("class", "menu-inner-box selected");
+}
+
+function goToGlossary() {
+    clearAll();
+    $(document).prop('title', 'Patrick West - my glossary');
+    $("#glossary").show();
+    $("#glossary-nav").attr("class", "menu-inner-box selected");
 }
 
 $(document).ready(function() {
