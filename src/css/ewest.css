@@ -7,8 +7,10 @@ body {
   color: #212121;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
-  margin:0;
+  margin:auto auto;
   padding:0;
+  width:1000px;
+  background-color: black;
 }
 
 a {
@@ -22,35 +24,36 @@ a:visited {
 .header {
   display: flex;
   flex-flow: row nowrap;
-  background-color: blue;
 }
 
 .my-pictures {
   flex: 0 1 150px;
-  background-color: black;
+  background-color: white;
 }
 
 .my-image {
   width: 145px;
 }
 
+.my-name {
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
 .main-header {
   flex: 1 1 100px;
   display: flex;
   flex-flow: column nowrap;
-  background-color: black;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 900px;
 }
 
 .title-header {
-  flex: 1 1 155px;
-  color: white;
-  font-size: 72px;
-  font-weight: 900;
-  padding-left: 50px;
-  display: flex;
-  justify-content: flex-start;
-  text-transform: uppercase;
-  align-items: center;
+  flex: 1 1 200px;
 }
 
 .title-color {
@@ -63,7 +66,6 @@ a:visited {
   flex: 1 1 50px;
   display: flex;
   flex-flow: row nowrap;
-  background-color: white;
 }
 
 .menu-box {
@@ -101,8 +103,21 @@ a:visited {
   cursor: pointer;
 }
 
+.main-content {
+  background-color: white;
+  margin-top: -20px;
+}
+
 .content {
   margin: 20px 0 0 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.footer {
+  height: 20px;
+  background-color: white;
+  margin-top: -10px;
 }
 
 ul.code-list {
@@ -188,6 +203,10 @@ a.code-item {
 
   .title-color {
     font-size: 72px;
+  }
+
+  body {
+    width: 100%;
   }
 }
 
